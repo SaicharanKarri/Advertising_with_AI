@@ -1,0 +1,15 @@
+step1: git clone https://github.com/SaicharanKarri/smart_advertising_system.git
+
+step2: cd .\smart_advertising_system\  
+
+step3: conda create -n advertisement python=3.12.11
+
+step4: conda activate advertisement
+
+step5: pip install -r requirements.txt
+
+step6: python generate_roi.py --video_path .\videos\floor.mp4
+
+# click on the screen where ever you want to draw the points after work is done press "q" to close the frame
+
+step7 : python run.py --video_path .\videos\floor.mp4 --json_path "annotations.json"
